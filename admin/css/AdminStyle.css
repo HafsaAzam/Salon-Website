@@ -1,0 +1,755 @@
+.container {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+}
+
+:root {
+    --color1: #efe3f6;
+    --color2: #72448d;
+    --color3: #5C3474;
+}
+
+.logoutbtn {
+    display: flex;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+}
+
+.logoutbtn:hover {
+    cursor: pointer;
+}
+
+.navbarRight {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    background-color: var(--color1);
+    color: var(--color3);
+}
+
+.head {
+    font-size: 1.1rem;
+}
+
+.hr {
+    color: white;
+    background: white;
+    height: 0.2vh;
+}
+
+.mainContent {
+    position: absolute;
+    left: 20%;
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding: 30px;
+    z-index: -1;
+}
+
+#dashboard {
+    width: 100%;
+    height: 50vh;
+    top: 8vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.dashBox {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 10px;
+}
+
+.box {
+    width: 25%;
+    height: 40vh;
+    background: linear-gradient(125deg, var(--color2), var(--color2), var(--color3));
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+#userTable,
+#appointmentTable {
+    width: 100%;
+    height: 95%;
+    display: none;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+    border-collapse: collapse;
+    flex-direction: column;
+}
+
+#userTable table,
+#appointmentTable table,
+#service table,
+#gallery table {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+}
+
+#userTable table thead,
+#appointmentTable table thead,
+#service table thead,
+#gallery table thead {
+    width: 100%;
+    gap: 10px;
+    background-color: var(--color2);
+    color: white;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.4);
+}
+
+#userTable table thead tr,
+#appointmentTable table thead tr {
+    width: 100%;
+    display: flex;
+}
+
+#service table thead tr,
+#gallery table thead tr {
+    display: grid;
+    grid-template-columns: repeat(3, 0.2fr) 0.4fr;
+}
+
+#userTable table tbody,
+#appointmentTable tbody,
+#service table tbody,
+#gallery table tbody {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+#userTable table tbody tr,
+#appointmentTable table tbody tr,
+#service table tbody tr,
+#gallery table tbody tr {
+    width: 100%;
+    display: flex;
+}
+
+#userTable table tr th,
+#userTable table tr td {
+    width: 25%;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+#userTable table tbody,
+#appointmentTable table tbody,
+#service table tbody,
+#gallery table tbody {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--color2);
+    gap: 10px;
+    overflow-y: auto;
+}
+
+#userTable table tr td,
+#appointmentTable table tr td,
+#service table tr td,
+#gallery table tr td {
+    word-wrap: break-word;
+    padding: 8px;
+}
+
+td {
+    border: 1px solid var(--color2);
+    border-collapse: collapse;
+}
+
+#appointmentTable table tr th,
+#appointmentTable table tr td {
+    width: 12.5%;
+    padding: 10px;
+}
+
+#service {
+    width: 100%;
+    height: 95%;
+    flex-direction: column;
+    display: none;
+}
+
+#gallery {
+    width: 100%;
+    height: 95%;
+    flex-direction: column;
+    display: none;
+}
+
+.addBtn {
+    width: 12%;
+    padding: 6px 5px;
+    font-weight: bold;
+    background: var(--color2);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+#service table tr th,
+#service table tr td,
+#gallery table tr th,
+#gallery table tr td {
+    width: 33.33%;
+    padding: 10px;
+}
+
+h1 {
+    color: var(--color2);
+}
+
+.addBtn {
+    transform: scale(1.02);
+}
+
+#pkg {
+    width: 100%;
+    height: 95%;
+    border: 2px solid black;
+    display: none;
+    flex-direction: column;
+}
+
+.img {
+    padding: 5px;
+    width: 100%;
+    height: 170px;
+}
+
+.slider {
+    width: 260px;
+    height: 100vh;
+    background-color: var(--color2);
+    position: absolute;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.container ul li a {
+    font-size: 1.3rem;
+}
+
+.box p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#service table tbody tr td a button,
+#gallery table tbody tr td a button {
+    width: 80px;
+    height: 40px;
+}
+
+.top-nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background: linear-gradient(125deg, var(--color2), var(--color2), var(--color3));
+    left: 15%;
+    z-index: -1;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top_navBtn {
+    background: none;
+    border: none;
+}
+
+.close2 {
+    float: right;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 0;
+    color: white;
+    background: none;
+    border: none;
+    position: absolute;
+    right: -0px;
+    display: none;
+}
+
+@media only screen and (min-device-width: 851px) and (max-device-width: 1240px) {
+    #userTable,
+    #appointmentTable {
+        height: 100%;
+        justify-content: flex-start;
+    }
+
+    #service,
+    #gallery {
+        height: 80%;
+        justify-content: flex-start;
+    }
+
+    #userTable table,
+    #appointmentTable table,
+    #service table,
+    #gallery table {
+        height: 85%;
+    }
+
+    .nav {
+        --bs-nav-link-padding-y: 0rem;
+    }
+
+    .mainContent {
+        left: 21%;
+        width: 79%;
+    }
+
+    .box {
+        width: 30%;
+        height: 45vh;
+    }
+}
+
+@media only screen and (max-device-width: 1136px) {
+    .addBtn {
+        width: 15%;
+    }
+
+    .mainContent {
+        left: 23%;
+        width: 77%;
+    }
+}
+
+@media only screen and (max-device-width: 1045px) {
+    .addBtn {
+        width: 20%;
+    }
+
+    .mainContent {
+        left: 25%;
+        width: 75%;
+    }
+
+    .box {
+        width: 35%;
+        height: 45vh;
+    }
+}
+
+@media only screen and (max-device-width: 960px) {
+    .mainContent {
+        left: 27%;
+        width: 73%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .img {
+        height: 140px;
+    }
+}
+
+@media only screen and (min-device-width: 851px) and (max-device-width: 900px) {
+    .mainContent {
+        left: 23%;
+        width: 77%;
+    }
+
+    .slider {
+        width: 210px;
+    }
+
+    .nav {
+        --bs-nav-link-padding-x: 0rem;
+    }
+}
+
+@media only screen and (max-device-width: 850px) {
+    .mainContent {
+        left: 0;
+        width: 100%;
+    }
+
+    .dashBox {
+        gap: 10px;
+    }
+
+    .addBtn {
+        width: 20%;
+    }
+
+    .img {
+        padding: 0px;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .top-nav {
+        width: 100%;
+        left: 0%;
+    }
+
+    .nav {
+        --bs-nav-link-padding-y: 0rem;
+    }
+}
+
+@media only screen and (max-device-width: 670px) {
+    #dashboard,
+    #userTable,
+    #appointmentTable,
+    #services,
+    #gallery {
+        height: 84vh;
+        justify-content: flex-start;
+    }
+
+    .dashBox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 0px;
+    }
+
+    .box {
+        width: 90%;
+        height: 35vh;
+    }
+
+    #userTable table,
+    #appointmentTable table,
+    #service table {
+        height: 80%;
+    }
+
+    #gallery table {
+        height: 70%;
+    }
+
+    .addBtn {
+        margin-top: 0px;
+    }
+
+    .box h2 {
+        margin-bottom: 0rem;
+    }
+}
+
+@media only screen and (max-device-width: 580px) {
+    .mainContent {
+        padding: 15px;
+    }
+
+    #userTable table,
+    #appointmentTable table {
+        height: 85%;
+    }
+
+    #gallery table {
+        height: 75%;
+    }
+
+    .img {
+        height: 100px;
+    }
+
+    .addBtn {
+        width: 25%;
+    }
+
+    #service table tbody tr td a button,
+    #gallery table tbody tr td a button {
+        width: 53px;
+        height: 30px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    #appointmentTable table tbody tr td:nth-child(1),
+    #appointmentTable table thead tr th:nth-child(1) {
+        max-width: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #appointmentTable table tbody tr td:nth-child(5),
+    #appointmentTable table thead tr th:nth-child(5) {
+        min-width: 114px;
+    }
+
+    #service table tbody tr td:nth-child(1),
+    #gallery table tbody tr td:nth-child(1),
+    #service table thead tr th:nth-child(1),
+    #gallery table thead tr th:nth-child(1) {
+        max-width: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #service table tbody tr td:nth-child(2),
+    #service table thead tr th:nth-child(2) {
+        min-width: 332.5px;
+    }
+
+    #service table tbody tr td:nth-child(3),
+    #service table thead tr th:nth-child(3) {
+        max-width: 65px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #service table tbody tr td:nth-child(4),
+    #gallery table tbody tr td:nth-child(4),
+    #service table thead tr th:nth-child(4),
+    #gallery table thead tr th:nth-child(4) {
+        max-width: 70px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #service table tbody tr td:nth-child(5),
+    #gallery table tbody tr td:nth-child(5),
+    #service table thead tr th:nth-child(5),
+    #gallery table thead tr th:nth-child(5) {
+        max-width: 70px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #gallery table tbody tr td:nth-child(2),
+    #gallery table thead tr th:nth-child(2) {
+        min-width: 205px;
+    }
+
+    #gallery table tbody tr td:nth-child(3),
+    #gallery table thead tr th:nth-child(3) {
+        min-width: 150px;
+    }
+
+    #service table thead tr,
+    #gallery table thead tr {
+        display: flex;
+    }
+
+    .addBtn {
+        width: 35%;
+    }
+
+    .dashBox {
+        justify-content: space-between;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 572px) {
+    #service table tbody tr td:nth-child(2),
+    #service table thead tr th:nth-child(2) {
+        min-width: 300px;
+    }
+
+    #service table tbody tr td:nth-child(4),
+    #service table tbody tr td:nth-child(5),
+    #service table thead tr th:nth-child(4),
+    #service table thead tr th:nth-child(5),
+    #gallery table tbody tr td:nth-child(4),
+    #gallery table tbody tr td:nth-child(5),
+    #gallery table thead tr th:nth-child(4),
+    #gallery table thead tr th:nth-child(5) {
+        max-width: 77px;
+    }
+}
+
+@media only screen and (max-device-width: 556px) {
+    #gallery table tbody tr td:nth-child(2),
+    #gallery table thead tr th:nth-child(2) {
+        min-width: 190px;
+    }
+
+    #appointmentTable table tbody tr td:nth-child(8),
+    #appointmentTable table thead tr th:nth-child(8) {
+        max-width: 48px;
+    }
+
+    #appointmentTable table tbody tr td:nth-child(5),
+    #appointmentTable table thead tr th:nth-child(5) {
+        min-width: 128px;
+    }
+}
+
+@media only screen and (max-device-width: 548px) {
+    #gallery table tbody tr td:nth-child(2),
+    #gallery table thead tr th:nth-child(2) {
+        min-width: 100px;
+    }
+
+    #service table tbody tr td:nth-child(2),
+    #service table thead tr th:nth-child(2) {
+        min-width: 277px;
+    }
+
+    #appointmentTable table tbody tr td,
+    #appointmentTable table thead tr td,
+    #service table tr td,
+    #gallery table tr td {
+        padding: 4px;
+    }
+
+    #appointmentTable table tbody tr td:nth-child(1),
+    #appointmentTable table thead tr th:nth-child(1) {
+        max-width: 19px;
+    }
+}
+
+@media only screen and (max-device-width: 524px) {
+    #service table tbody tr td:nth-child(2),
+    #service table thead tr th:nth-child(2) {
+        min-width: 253px;
+    }
+}
+
+@media only screen and (max-device-width: 500px) {
+    #service table tbody tr td:nth-child(2),
+    #service table thead tr th:nth-child(2) {
+        min-width: 229px;
+    }
+}
+
+@media only screen and (max-device-width: 476px) {
+    #service table tbody tr td:nth-child(2),
+    #service table thead tr th:nth-child(2) {
+        min-width: 205px;
+    }
+}
+
+@media only screen and (max-device-width: 452px) {
+    #service table tbody tr td:nth-child(2),
+    #service table thead tr th:nth-child(2) {
+        min-width: 181px;
+    }
+}
+
+@media only screen and (max-device-width: 448px) {
+    #gallery table tbody tr td:nth-child(2),
+    #gallery table thead tr th:nth-child(2) {
+        min-width: 20px;
+    }
+}
+
+@media only screen and (max-device-width: 428px) {
+    #service table tbody tr td:nth-child(2),
+    #service table thead tr th:nth-child(2) {
+        min-width: 171px;
+    }
+}
+
+@media only screen and (max-device-width: 425px) {
+    #appointmentTable table tr td,
+    #service table tr td,
+    #gallery table tr td {
+        word-break: break-all;
+        width: 100%;
+    }
+
+    #appointmentTable table tbody tr td:nth-child(8),
+    #appointmentTable table thead tr th:nth-child(8) {
+        max-width: 100%;
+    }
+
+    #appointmentTable table tbody tr td:nth-child(1),
+    #appointmentTable table thead tr th:nth-child(1) {
+        max-width: 100%;
+    }
+
+    #appointmentTable table tbody tr {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #appointmentTable table tbody {
+        gap: 2px;
+        display: grid;
+    }
+
+    #appointmentTable table thead tr {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #appointmentTable table tr th,
+    #appointmentTable table tr td {
+        width: 100%;
+    }
+
+    #service table tbody tr td:nth-child(1),
+    #gallery table tbody tr td:nth-child(1),
+    #service table thead tr th:nth-child(1),
+    #gallery table thead tr th:nth-child(1) {
+        max-width: 25px;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-device-width: 320px) {
+    .dashBox {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 22px;
+    }
+
+    #appointmentTable table tbody tr td:nth-child(5),
+    #appointmentTable table thead tr th:nth-child(5) {
+        min-width: 0px;
+    }
+
+    #service table tbody tr td:nth-child(1),
+    #gallery table tbody tr td:nth-child(1),
+    #service table thead tr th:nth-child(1),
+    #gallery table thead tr th:nth-child(1) {
+        min-width: 25px;
+    }
+
+    #service table tbody tr td:nth-child(2),
+    #service table thead tr th:nth-child(2) {
+        min-width: 78px;
+    }
+
+    .addBtn {
+        width: 40%;
+    }
+
+    #gallery table tbody tr td:nth-child(3),
+    #gallery table thead tr th:nth-child(3) {
+        min-width: 85px;
+    }
+}

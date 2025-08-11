@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="review.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Quicksand:wght@300..700&family=Tangerine:wght@400;700&display=swap"
+    rel="stylesheet">
+  <title>Add Review</title>
+</head>
+
+<body>
+  <div class="reviews">
+    <div class="reviews2">
+      <div class="row1-Review">
+        <h3>Add a</h3>
+        <h1>REVIEW</h1>
+      </div>
+      <div class="row2-Review">
+        <form id="form-Review" enctype="multipart/form-data" action="AddReview.php" method="POST">
+          <div class="boxText">
+            <input type="text" name="fullname" class="app-col" placeholder="Name" required>
+            <input type="text" name="email" class="app-col" placeholder="Email" required>
+            <textarea id="message" rows="6" cols="40" type="" name="msg" class="app-col" placeholder="Write Message"
+              required></textarea>
+          </div>
+
+          <hr>
+          <div class="boxBtn">
+            <button type="reset">RESET</button>
+            <button type="submit" name="submit" value="Upload">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

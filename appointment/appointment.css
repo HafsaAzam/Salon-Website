@@ -1,0 +1,402 @@
+:root {
+    --color1: #efe3f6;
+    --color2: #72448d;
+    --color3: #5C3474;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    overflow-x: hidden;
+    background: var(--color2);
+    color: white;
+    font-family: "Quicksand", sans-serif;
+}
+
+button {
+    font-family: "Quicksand", sans-serif;
+}
+h3{
+    font-weight: 600;
+}
+.appointment {
+    width: 100%;
+    background-color: var(--color2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.row1-appointment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 30vh;
+}
+
+.row1-appointment h3 {
+    line-height: 10px;
+    font-weight: 100;
+}
+.row1-appointment h1{
+    font-family: "Cinzel Decorative", serif;
+}
+
+.row2-appointment {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+#form-appointment {
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.pt-app {
+    padding-top: 50px;
+}
+
+hr {
+    margin: 10px 0 15px 0;
+    background-color: whitesmoke;
+    height: 0.8px;
+    width: 100%;
+}
+
+.app-box1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-box1 .box1-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-box1 .box1-1 input {
+    width: 200px;
+    font-size: 1.1rem;
+    margin-top: 3px;
+    background: transparent;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid var(--color1);
+    padding: 2px 10px;
+}
+
+.app-box1 .box1-1 input:hover,
+.app-box1 .box1-1 input:focus {
+    box-shadow: 0 0 5px var(--color1);
+}
+
+::placeholder {
+    color: #bbaed3;
+    opacity: 1;
+}
+
+.app-box3 {
+    gap: 10px;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.app-box3 div input{
+    margin-right: 5px;
+}
+.app-box4 {
+    display: flex;
+    gap: 27px;
+}
+
+.app-box4 .column2 {
+    width: 150px;
+    position: relative;
+    right: 20px;
+}
+
+.app-box4 input {
+    font-size: 0.9rem;
+    text-align: center;
+    background: var(--color1);
+    padding: 2px 5px;
+    color: var(--color3);
+    border-radius: 3px;
+}
+
+.app-box6 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 19vh;
+}
+
+.box6-1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+}
+
+.app-box6 button[type="submit"] {
+    padding: 20px;
+    height: 6vh;
+    border-radius: 3px;
+    font-size: 1.17rem;
+    /* font-weight: bold; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    box-shadow: 0px 0px 10px var(--color3);
+    background-color: var(--color1);
+    color: var(--color2);
+    cursor: pointer;
+}
+
+.app-box6 button[type="reset"] {
+    padding: 20px;
+    height: 6vh;
+    margin-right: 20px;
+    border-radius: 3px;
+    font-size: 1.17rem;
+    /* font-weight: bold; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    box-shadow: 0px 0px 10px var(--color1);
+    background-color: var(--color3);
+    color: var(--color1);
+    cursor: pointer;
+}
+
+.app-box6 button[type="reset"]:hover {
+    background-color: var(--color1);
+    color: var(--color3);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px var(--color3);
+    transition: ease 0.3s;
+    transform: translateY(-2px);
+}
+
+.app-box6 button[type="submit"]:hover {
+    background-color: var(--color3);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px var(--color1);
+    transition: ease 0.3s;
+    transform: translateY(-2px);
+}
+
+/* ## Media Queries for Responsiveness */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 425px) {
+    #appointment {
+        top: 260%;
+    }
+    .row1-appointment {
+    justify-content: flex-end;
+    height: 20vh;
+    margin-bottom: 30px;
+}
+h3{
+    font-size: 1.1rem;
+}
+.row1-appointment h1{
+    font-size: 1.6rem;
+}
+.row1-appointment h3 {
+    font-size: 1.1rem;
+}
+#form-appointment{
+    font-size: 0.9rem;
+}
+.pt-app {
+    padding-top: 30px;
+}
+.app-box1 .box1-1 input {
+    font-size: 0.9rem;
+}
+    .app-box1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .app-box3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .app-box3 div {
+        gap: 5px;
+        display: flex;
+    }
+
+    .app-box4 {
+        display: grid;
+        grid-template-columns: repeat(2, 0.6fr);
+        width: 100%;
+        grid-row-gap: 10px;
+    }
+
+    .app-col {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .box6-1{
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .app-box6 button[type="reset"]{
+                width: 100%;
+        margin-right: 0;
+    }
+    .app-box6 button[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-device-width : 425px) and (max-device-width : 480px) {
+    #appointment {
+        top: 260%;
+    }
+
+    .app-box1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .app-box3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .app-box4 {
+        display: grid;
+        grid-template-columns: repeat(2, 0.3fr);
+        width: 100%;
+        grid-row-gap: 10px;
+    }
+
+    .app-col {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 600px) {
+    #appointment {
+        top: 250%;
+    }
+
+    .app-box1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .app-box3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .app-box4 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        grid-row-gap: 10px;
+    }
+
+    .app-col {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-device-width : 601px) and (max-device-width : 767px) {
+    #appointment {
+        top: 188%;
+    }
+
+    .app-box1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 10px;
+    }
+
+    .app-box3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .app-box4 {
+        display: grid;
+        grid-template-columns: repeat(1, 0.2fr 0.8fr);
+        width: 100%;
+        grid-row-gap: 10px;
+    }
+
+    .app-col {
+        display: grid;
+    }
+}
+
+@media only screen and (min-device-width : 700px) and (max-device-width : 767px) {
+    #appointment {
+        top: 168%;
+    }
+
+    .app-box3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+    #appointment {
+        top: 170%;
+    }
+
+    .app-box1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+    }
+
+    .app-box3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1240px) {
+    #appointment {
+        top: 125%;
+    }
+
+    .row2-appointment {
+        width: 90%;
+    }
+
+    .app-box3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width : 1241px) and (max-width : 1540px) {
+    #appointment {
+        top: 120%;
+    }
+
+    .app-box3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

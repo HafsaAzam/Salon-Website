@@ -1,0 +1,880 @@
+:root {
+    --color1: #efe3f6;
+    --color2: #72448d;
+    --color3: #5C3474;
+}
+
+/* ------------------------------------------- */
+/* Media Query for Large Desktops (>= 1240px) */
+/* ------------------------------------------- */
+@media only screen and (min-device-width : 1240px) {
+    .card2a-services {
+        width: 20%;
+    }
+
+    .mainheading h1 {
+        margin: 0;
+    }
+
+    .detailpara {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* --------------------------------------------- */
+/* Media Query for Laptops/Tablets (<= 1240px) */
+/* --------------------------------------------- */
+@media only screen and (max-device-width : 1240px) {
+    .home-img {
+        width: 40px;
+    }
+
+    .mainheading h1 {
+        width: 80%;
+        font-size: 3.5rem;
+    }
+
+    .detailpara {
+        width: 95%;
+    }
+
+    .about {
+        padding: 20px 0 30px;
+    }
+
+    .contactdetails {
+        padding: 0px 0px;
+    }
+
+    .Conatctlogo img {
+        height: 150px;
+        width: auto;
+    }
+
+    .gallery {
+        padding: 20px 0 0 0;
+    }
+
+    .reviews-body {
+        padding: 20px 0 0 0;
+    }
+}
+
+/* ------------------------------------------- */
+/* Media Query for Tablets (<= 1024px)       */
+/* ------------------------------------------- */
+@media only screen and (max-device-width : 1024px) {
+    .nav-link {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .nav-menu li {
+        margin-right: 1rem;
+    }
+
+    #cookieConsent p {
+        font-size: 0.9rem;
+        width: 70%;
+    }
+
+    .logoimg {
+        margin-left: 20px;
+        /* width: 60px; */
+    }
+
+    .Modalbtn,
+    .login,
+    .SignUp {
+        padding: 8px;
+    }
+
+    .logo h5 {
+        font-size: 1rem;
+        margin-left: 4px;
+    }
+
+    .loginbutton {
+        right: 20px;
+    }
+
+    .home {
+        background-size: 450px 450px;
+    }
+
+    .home-img {
+        width: 380px;
+        height: auto;
+    }
+
+    .mainheading h1 {
+        width: 85%;
+        font-size: 3rem;
+    }
+
+    .about .container-abt {
+        padding-bottom: 2rem;
+    }
+
+    .about-description p {
+        font-size: 1.1rem;
+    }
+
+    .row2-services {
+        margin-top: 20px;
+        column-gap: 30px;
+    }
+
+    .card2a-services {
+        width: 22%;
+    }
+
+    .card2a-services img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .row3-services {
+        height: 20vh;
+    }
+
+    .col3a-services {
+        height: 50%;
+        align-items: flex-start;
+    }
+
+    .col3a-services .animated-button-services {
+        gap: 4px;
+        padding: 10px 30px;
+    }
+
+    .card-p {
+        width: 22%;
+        padding: 30px 10px;
+    }
+
+    .professionals {
+        padding: 90px 50px 30px;
+    }
+
+    .name {
+        font-size: 1.1rem;
+    }
+
+    .prof {
+        font-size: 0.9rem;
+    }
+
+    .text-p p {
+        font-size: 0.8rem;
+    }
+
+    .gallery {
+        background-size: 450px 450px;
+    }
+
+    .gallery-content {
+        background-size: 450px 450px;
+    }
+
+    .gallery-img img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .reviews-body {
+        background-size: 450px 450px;
+    }
+}
+
+/* ---------------------------------------------------- */
+/* Media Query for smaller Tablets/Large Phones (<= 920px - specific for navbar) */
+/* ---------------------------------------------------- */
+@media (max-width: 920px) {
+
+    .nav-toggel button,
+    .nav-toggel button:hover,
+    .nav-toggel button:active {
+        background-color: transparent;
+    }
+
+    .modal.fade .modal-dialog {
+        transition: transform 1s ease-out !important;
+        transform: translate(100%, 0) !important;
+    }
+
+    .modal.fade.show .modal-dialog {
+        transition: transform 1s ease-in !important;
+        transform: translate(0%, 0) !important;
+    }
+
+    .modal-header .btn-close {
+        margin: 0;
+        opacity: 1;
+        filter: brightness(0) saturate(100%) invert(20%) sepia(30%) saturate(700%) hue-rotate(250deg);
+    }
+
+    .modal-dialog {
+        position: relative;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: var(--color1);
+        margin: 0px 0 0px 60%;
+        padding: 20px;
+        width: 80%;
+        max-width: 500px;
+        text-align: center;
+        border-radius: 10px;
+        width: 40%;
+        height: 100%;
+    }
+
+    .close {
+        color: var(--color3);
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .header {
+        padding: 0 20px;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0%;
+        background-color: #d3d3ff;
+        font-size: 1.5rem;
+        text-align: center;
+        text-transform: capitalize;
+        padding-top: 5rem;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        transition: left 0.4s ease-in-out;
+    }
+
+    .show-nav {
+        width: 60%;
+    }
+
+    .nav-menu .nav-list {
+        display: block;
+    }
+
+    .nav-menu li {
+        padding: 15px 0;
+    }
+
+    .nav-link li {
+        font-size: 1.25rem;
+    }
+
+    .nav-toggel {
+        display: flex;
+        align-items: center;
+        background: transparent;
+        height: 40px;
+        padding: 0;
+    }
+}
+
+
+/* ------------------------------------------- */
+/* Media Query for Medium Phones (<= 768px)  */
+/* ------------------------------------------- */
+@media only screen and (max-device-width : 768px) {
+    #cookieConsent {
+        padding: 10px 20px;
+    }
+
+    #cookieConsent p {
+        width: 80%;
+    }
+
+    .cookiesBtn {
+        flex-direction: column;
+    }
+
+    .home-img {
+        width: 300px;
+        height: auto;
+    }
+
+    .mainheading {
+        width: 90%;
+    }
+
+    .tagline {
+        font-size: 1.5rem;
+    }
+
+    .mainheading h1 {
+        width: 90%;
+        font-size: 2.5rem;
+    }
+
+    .detailpara {
+        margin-left: 0px;
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .about .container-abt {
+        padding-bottom: 0rem;
+    }
+
+    .section-title-abt h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-img img {
+        height: 310px;
+    }
+
+    .about-description p {
+        font-size: 0.9rem;
+    }
+
+    .about-description {
+        padding: 0rem;
+    }
+
+    .services h1 {
+        font-size: 2.2rem;
+    }
+
+    .row2-services {
+        grid-gap: 30px 20px;
+        margin-top: 0px;
+    }
+
+    .row1-services {
+        height: 15vh;
+    }
+
+    .card2a-services {
+        width: 30%;
+    }
+
+    .card-p {
+        width: 45%;
+        padding: 30px 20px;
+    }
+
+    .one {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .two {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .one img {
+        margin-right: 10px;
+    }
+
+    .name {
+        margin: 0;
+    }
+
+    .prof {
+        margin-bottom: 0;
+    }
+
+    .one img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card-p p {
+        text-align: left;
+    }
+
+    .gallery-list-img {
+        gap: 1rem;
+    }
+
+    .gallery-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .gallery .section-title h1 {
+        font-size: 2.2rem;
+    }
+
+    .reviews-body-heading {
+        font-size: 2.2rem;
+    }
+
+    .slide p {
+        font-size: 1rem;
+    }
+
+    .Address h2,
+    .OpenedTime h2,
+    .ContactNo h2 {
+        font-size: 1.2rem;
+    }
+
+    .Address p,
+    .OpenedTime p,
+    .ContactNo p {
+        font-size: 0.85rem
+    }
+
+    .Conatctlogo img {
+        height: 100px;
+    }
+
+    .socialmediaicons img {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+/* --------------------------------------------- */
+/* Media Query for Small Phones (<= 426px - specific for navbar) */
+/* --------------------------------------------- */
+@media (max-width: 426px) {
+    .modal-content {
+        width: 70%;
+        margin: 0px 0px 0px 30%;
+    }
+}
+
+/* ------------------------------------------- */
+/* Media Query for Smaller Phones (<= 425px) */
+/* ------------------------------------------- */
+@media only screen and (max-device-width : 425px) {
+    #cookieConsent p {
+        width: 67%;
+        font-size: 0.8rem;
+    }
+
+    .cookiesBtn {
+        flex-direction: column;
+    }
+
+    .cookiesBtn button {
+        padding: 8px 20px
+    }
+
+    .logoimg {
+        width: 35px;
+    }
+
+    .logoname {
+        width: 60px;
+    }
+
+    .logo h5 {
+        font-size: 0.9rem;
+    }
+
+    .header {
+        height: 3rem;
+    }
+
+    .nav-toggel {
+        font-size: 2rem;
+    }
+
+    .home-img {
+        width: 175px;
+    }
+
+    .navigationHome {
+        padding: 0 10px;
+    }
+
+    .navigationHome button {
+        font-size: 25px;
+    }
+
+    .tagline {
+        font-size: 1.5rem;
+    }
+
+    .mainheading h1 {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 31px;
+        margin: 5px 0;
+    }
+
+    .detailpara {
+        width: 100%;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .home-servicesBtn {
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+
+    .about {
+        padding: 20px 0 30px;
+    }
+
+    .section-title-abt {
+        height: 15vh;
+    }
+
+    .section-title-abt h1 {
+        font-size: 2rem;
+    }
+
+    .about-img img {
+        height: 250px;
+    }
+
+    .about-description p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .about-detail-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .section-title-abt h1 {
+        font-size: 2rem;
+    }
+
+    .about-detail {
+        padding: 2rem;
+    }
+
+    .row1-services h1 {
+        font-size: 2rem;
+    }
+
+    .card2a-services {
+        width: 45%;
+    }
+
+    .card2a-services img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .row3-services {
+        height: 25vh;
+        margin-bottom: 0px;
+    }
+
+    .col3a-services {
+        height: 50%;
+        align-items: flex-start;
+    }
+
+    .col3a-services .animated-button-services {
+        gap: 4px;
+        padding: 10px 30px;
+    }
+
+    .card-p {
+        width: 100%;
+    }
+
+    .professionals {
+        padding: 50px 50px 30px;
+    }
+
+    .gallery-img img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .gallery .section-title h1 {
+        font-size: 2rem;
+    }
+
+    .gallery .section-title span {
+        font-size: 1.3rem;
+    }
+
+    .gallery-content {
+        background-size: 300px 300px;
+        padding: 2rem 0;
+    }
+
+    .gallery-list-img {
+        margin: 1.5rem 0 0 0;
+    }
+
+    .reviews-body-heading {
+        font-size: 2rem;
+    }
+
+    .slide2 {
+        width: 75%;
+    }
+
+    .Conatctlogo img {
+        height: 100px;
+        width: auto;
+    }
+
+    .socialmediaicons img {
+        width: 20px;
+        height: auto;
+    }
+
+    .Address h2,
+    .OpenedTime h2,
+    .ContactNo h2 {
+        font-size: 1rem;
+    }
+
+    .Address p,
+    .OpenedTime p,
+    .ContactNo p {
+        font-size: 0.8rem;
+    }
+
+    .contactContainer {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .OpenedTime,
+    .ContactNo {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* ------------------------------------------- */
+/* Media Query for Smallest Phones (<= 375px)*/
+/* ------------------------------------------- */
+@media only screen and (max-device-width : 375px) {
+    .cookiesBtn button {
+        padding: 8px 15px;
+        font-size: 0.8rem
+    }
+
+    #container {
+        width: 100%;
+    }
+
+    .home-img {
+        width: 150px;
+    }
+
+    .detailpara {
+        font-size: 0.8rem;
+    }
+
+    .home-servicesBtn {
+        padding: 10px;
+    }
+
+    .tagline {
+        font-size: 13px;
+    }
+
+    .home-servicesBtn {
+        padding: 8px 5px;
+        font-size: 0.89rem;
+    }
+
+    .professionals {
+        padding: 50px 35px 30px;
+    }
+
+    .card-p p {
+        margin-top: 5px;
+    }
+
+    .gallery {
+        padding: 30px 0;
+    }
+
+    .gallery .section-title span {
+        font-size: 1.3rem;
+    }
+
+    .reviews-body {
+        padding: 20px 0 30px;
+    }
+
+    .slide {
+        margin-top: 10px;
+    }
+
+    .reviewsBtn {
+        height: 15vh;
+        padding-top: 0;
+    }
+
+    .Conatctlogo img {
+        height: 100px;
+        width: auto;
+    }
+
+    .socialmediaicons img {
+        width: 20px;
+        height: auto;
+    }
+
+    .Address h2,
+    .OpenedTime h2,
+    .ContactNo h2 {
+        font-size: 1rem;
+    }
+
+    .Address p,
+    .OpenedTime p,
+    .ContactNo p {
+        font-size: 0.8rem;
+    }
+
+    .contactContainer {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .OpenedTime,
+    .ContactNo {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* ----------------------------------------------- */
+/* Media Query for Very Small Phones (<= 320px)  */
+/* ----------------------------------------------- */
+@media only screen and (max-device-width : 320px) {
+    .mainheading h1 {
+        width: 100%;
+        font-size: 2.1rem;
+    }
+
+    .home-servicesBtn {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    .home-img {
+        width: 160px;
+        z-index: -1;
+        left: 20px;
+    }
+
+    .tagline {
+        font-size: 1.1rem;
+    }
+
+    .detailpara {
+        font-size: 0.74rem;
+    }
+
+    .section-title-abt h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-description p {
+        font-size: 0.89rem;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .about-img img {
+        height: 200px;
+        border-radius: 8px;
+    }
+
+    .about-detail {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .row1-services h1 {
+        font-size: 1.8rem;
+    }
+
+    .card2a-services {
+        width: 90%;
+    }
+
+    .name {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .prof {
+        text-align: left;
+        font-size: 0.8rem;
+    }
+
+    .card-p p {
+        font-size: 0.8rem;
+        text-align: left;
+    }
+
+    .gallery .section-title h1 {
+        font-size: 1.8rem;
+    }
+
+    .reviews-body-heading {
+        font-size: 1.8rem;
+    }
+
+    .modal-body button {
+        width: 180px;
+    }
+
+    .modal-contentR {
+        padding: 20px 30px;
+    }
+
+    .closeR {
+        top: 0px;
+    }
+
+    .modal-contentR h2 {
+        top: 10px;
+        position: relative;
+        font-size: 1.5rem;
+    }
+
+    .row1 {
+        font-size: 0.8rem;
+    }
+
+    .gallery-img img {
+        width: 200px;
+        height: 200px;
+    }
+}

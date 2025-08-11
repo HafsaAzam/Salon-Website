@@ -1,0 +1,254 @@
+:root {
+    --color1: #efe3f6;
+    --color2: #72448d;
+    --color3: #5C3474;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+button {
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: var(--color2);
+    color: white;
+    font-family: "Quicksand", sans-serif;
+}
+
+.reviews {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/bg/bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    /* background-position: 15% 0; */
+    padding: 30px 0;
+}
+
+.reviews2 {
+    padding: 10px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px 20px 30px;    box-shadow: 0px 0px 50px #aa84c0;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    background:transparent;
+}
+
+.row1-Review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.row1-Review h3 {
+    font-weight: 100;
+}
+.row1-Review h1{
+    font-family: "Cinzel Decorative", serif;
+}
+#form-Review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.boxText {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.boxText input[type="text"],
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    border: 1px solid var(--color1);
+    border-radius: 3px;
+    color: #fff;
+    resize: none;
+    font-size: 14px;
+    font-family: "Quicksand", sans-serif;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color1);
+    box-shadow: 0 0 5px var(--color1);
+}
+
+::placeholder {
+    color: #bbaed3;
+    opacity: 1;
+}
+
+.boxBtn {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.boxBtn button {
+    padding: 20px;
+    height: 6vh;
+    border-radius: 3px;
+    font-size: 1.17rem;
+    /* font-weight: bold; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 170px; */
+    box-shadow: 0px 0px 20px #350c4e;
+    background-color: var(--color1);
+    color: var(--color2);
+    cursor: pointer;
+    border: none;
+}
+
+.boxBtn button[type="reset"] {
+    background: var(--color3);
+    color: var(--color1);
+    box-shadow: 0px 0px 10px var(--color1);
+}
+
+.boxBtn button[type="reset"]:hover {
+    background-color: var(--color1);
+    color: var(--color3);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px var(--color3);
+    border-radius: 4px;
+    transition: ease 0.3s;
+    border: none;
+    transition: ease 0.3s;
+    transform: translateY(-2px);
+}
+
+.boxBtn button[type="submit"]:hover {
+    background-color: var(--color3);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px var(--color1);
+    border-radius: 4px;
+    transition: ease 0.3s;
+    border: none;
+    transition: ease 0.3s;
+    transform: translateY(-2px);
+}
+
+hr {
+    margin: 12px 0 25px;
+    background-color: var(--color1);
+    height: 0.8px;
+    width: 90%;
+}
+
+/* ## Media Queries for Responsiveness */
+
+@media only screen and (max-width:1024px) {
+    .reviews2 {
+        width: 35%;
+    }
+    .reviews{
+        background-size: 500px auto;
+background-position: 0;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .reviews2 {
+        width: 50%;
+    }
+    .reviews {
+        background-size: 400px auto;
+        background-position: 0 50%;
+    }
+}
+
+@media only screen and (max-width:426px) {
+        .reviews {
+        background-size: 300px auto;
+                background-position: -30% 40%;
+        }
+    .reviews2 {
+        width: 65%;
+    }
+.row1-Review h1{
+        font-size: 1.6rem;
+}
+.row1-Review h3{
+        font-size: 0.9rem;
+}
+.boxText input[type="text"], textarea {
+    font-size: 0.8rem;
+}
+.boxBtn button {
+    font-size: 1rem;}
+    .boxText {
+        width: 80%;
+    }
+
+    hr {
+        width: 80%;
+    }
+
+    .boxBtn {
+        width: 80%;
+        gap: 10px;
+    }
+
+    .box {
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+@media only screen and (max-width:376px) {
+        .reviews {
+        background-size: 300px auto;
+        background-position: center 40%;
+        }
+    .boxText, hr{
+        width: 85%;
+    }
+    .boxBtn {
+        width: 85%;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .reviews2 {
+        width: 70%;
+    }
+
+    .boxText,hr {
+        width: 80%;
+    }
+    .boxBtn {
+        width: 80%;
+        gap: 10px;
+    }
+}
